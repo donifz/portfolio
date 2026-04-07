@@ -58,7 +58,8 @@ a {
 
 .hero-card > .hero-panel,
 .hero-card > .section-inner,
-.hero-card > .about-page {
+.hero-card > .about-page,
+.hero-card > .feature-page {
   flex: 1;
 }
 
@@ -502,6 +503,242 @@ a {
   font-size: 0.88rem;
 }
 
+.feature-page {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 3rem 3rem;
+}
+
+.feature-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-title {
+  max-width: 13ch;
+  font-size: clamp(2.2rem, 4.2vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.feature-lead {
+  max-width: 620px;
+  font-size: 0.98rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.feature-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.feature-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.82rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(59, 130, 246, 0.16);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.feature-chip-primary {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.2);
+}
+
+.feature-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.feature-stat {
+  padding: 0.95rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+.feature-stat strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.feature-stat span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.feature-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-card-grid,
+.contact-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.1rem 1rem;
+  border-radius: 20px;
+  background: #f8fbff;
+  border: 1px solid rgba(59, 130, 246, 0.12);
+  display: grid;
+  gap: 0.4rem;
+}
+
+.feature-card-tint {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+}
+
+.feature-card-soft {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.12) 0%, rgba(14, 165, 233, 0.08) 100%);
+}
+
+.feature-card-kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.feature-card strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.feature-card p {
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 0.88rem;
+}
+
+.project-compact-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-compact-card {
+  padding: 1.2rem 1.1rem;
+  border-radius: 22px;
+  background: #f8fbff;
+  border: 1px solid rgba(59, 130, 246, 0.12);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-compact-card-tint {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+}
+
+.project-compact-card strong {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.project-compact-card p {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.contact-action-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.contact-secondary-link {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.contact-compact-card {
+  padding: 1.4rem;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #f8fbff 0%, #eef6ff 52%, #e0f2fe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.16);
+  display: grid;
+  gap: 0.85rem;
+  box-shadow: 0 18px 40px rgba(59, 130, 246, 0.12);
+}
+
+.contact-compact-card h3 {
+  font-size: 0.78rem;
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.contact-compact-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.contact-compact-item {
+  display: grid;
+  gap: 0.22rem;
+  padding: 0.78rem 0.88rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  font-size: 0.88rem;
+}
+
+.contact-compact-item span {
+  color: rgba(37, 99, 235, 0.78);
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-compact-item strong {
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+}
+
 .badge-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -677,7 +914,10 @@ a {
   }
 
   .about-main,
+  .feature-main,
   .about-mini-grid,
+  .feature-card-grid,
+  .contact-mini-grid,
   .contact-grid,
   .project-grid {
     grid-template-columns: 1fr;
@@ -707,6 +947,10 @@ a {
     padding: 2.25rem 2rem 2.5rem;
   }
 
+  .feature-page {
+    padding: 2.25rem 2rem 2.5rem;
+  }
+
   .section-inner {
     padding: 0 2rem 1.75rem;
   }
@@ -727,7 +971,19 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .feature-title {
+    font-size: clamp(1.9rem, 8vw, 2.8rem);
+  }
+
+  .feature-stat-row {
+    grid-template-columns: 1fr;
+  }
+
   .about-copy {
+    justify-content: flex-start;
+  }
+
+  .feature-copy {
     justify-content: flex-start;
   }
 }
@@ -758,6 +1014,10 @@ a {
     padding: 2rem 1.4rem 2.2rem;
   }
 
+  .feature-page {
+    padding: 2rem 1.4rem 2.2rem;
+  }
+
   .section-inner {
     padding: 0 1.4rem 1.4rem;
   }
@@ -767,17 +1027,25 @@ a {
   }
 
   .about-main,
+  .feature-main,
   .about-mini-grid,
+  .feature-card-grid,
+  .contact-mini-grid,
   .contact-grid {
     gap: 1.2rem;
   }
 
   .about-note,
+  .contact-compact-card,
   .fact-card {
     padding: 1.3rem;
   }
 
   .about-title {
+    max-width: 100%;
+  }
+
+  .feature-title {
     max-width: 100%;
   }
 
