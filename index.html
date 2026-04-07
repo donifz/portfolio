@@ -1,185 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Разработчик</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Марлон | Веб-дизайнер из Кыргызстана</title>
+  <meta name="description" content="Марлон — веб-дизайнер из Кыргызстана. Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
+  <meta name="keywords" content="веб-дизайнер, дизайн сайта, UI/UX, адаптивный сайт, Кыргызстан, Бишкек, цифровой продукт, маркетинг">
+  <meta name="author" content="Марлон">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b82f6">
+  <meta property="og:title" content="Марлон | Веб-дизайнер из Кыргызстана">
+  <meta property="og:description" content="Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="assets/hero-photo.jpeg">
+  <meta property="og:image:alt" content="Портрет Марлона — веб-дизайнера">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Марлон | Веб-дизайнер из Кыргызстана">
+  <meta name="twitter:description" content="Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
+  <meta name="twitter:image" content="assets/hero-photo.jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Марлон",
+    "jobTitle": "Веб-дизайнер",
+    "description": "Веб-дизайнер из Кыргызстана. Разрабатываю адаптивные сайты и интерфейсы с грамотным UX для бизнеса в Бишкеке и СНГ.",
+    "image": "assets/hero-photo.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Бишкек",
+      "addressCountry": "KG"
+    },
+    "knowsAbout": ["веб-дизайн", "UI/UX", "адаптивный сайт", "цифровые продукты"],
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://www.behance.net/",
+      "https://github.com/"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Навигация -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Мое портфолио</div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">Обо мне</a></li>
-                <li><a href="#skills" class="nav-link">Навыки</a></li>
-                <li><a href="#projects" class="nav-link">Проекты</a></li>
-                <li><a href="#contact" class="nav-link">Контакты</a></li>
-            </ul>
+  <div class="page-shell">
+    <div class="hero-card">
+      <header class="hero-header">
+        <div class="brand">Marlon</div>
+        <nav class="hero-nav">
+          <a href="#home" class="nav-link active">Главная</a>
+          <a href="#about" class="nav-link">О себе</a>
+          <a href="#skills" class="nav-link">Навыки</a>
+          <a href="#works" class="nav-link">Работы</a>
+          <a href="#contact" class="nav-link">Контакты</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary">Связаться</a>
+      </header>
+
+      <section class="hero-panel" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Привет,</p>
+          <h1>Я <span>Марлон</span><br>веб-дизайнер</h1>
+          <p class="hero-description">Создаю современные сайты и цифровые продукты с понятным интерфейсом и сильным пользовательским опытом.</p>
+          <a href="#contact" class="btn btn-primary hero-action">Связаться</a>
+          <div class="hero-social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-    </nav>
 
-    <!-- Герой секция -->
-    <section class="hero" id="about">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Привет! Я Разработчик</h1>
-                <p class="subtitle">Создаю современные и функциональные веб-приложения</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Посмотреть мои проекты</a>
-                    <a href="#contact" class="btn btn-secondary">Свяжитесь со мной</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="avatar-placeholder">
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
+        <div class="hero-visual">
+          <div class="hero-blob"></div>
+          <div class="hero-image">
+            <img src="assets/hero-photo.jpeg" alt="Портрет Марлона">
+          </div>
         </div>
-    </section>
-
-    <!-- Обо мне -->
-    <section class="about">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <p>Я опытный веб-разработчик с увлечением к созданию красивых и функциональных интерфейсов. Специализируюсь на front-end разработке, но также хорошо знаком с back-end технологиями.</p>
-            <p>С энтузиазмом беру на себя новые вызовы, постоянно учусь и совершенствую свои навыки. Люблю работать в команде и помогать другим разработчикам.</p>
-        </div>
-    </section>
-
-    <!-- Навыки -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2>Мои навыки</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Front-end</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Back-end</h3>
-                    <p>Node.js, Python, Express, Django</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Базы данных</h3>
-                    <p>MongoDB, PostgreSQL, MySQL</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Инструменты</h3>
-                    <p>Git, Docker, Webpack, VS Code</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Проекты -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>Мои проекты</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Проект 1</h3>
-                    <p>Описание вашего первого проекта. Расскажите о технологиях и результатах.</p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                    </div>
-                    <a href="#" class="project-link">Посмотреть <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Проект 2</h3>
-                    <p>Описание вашего второго проекта. Расскажите о технологиях и результатах.</p>
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                    <a href="#" class="project-link">Посмотреть <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Проект 3</h3>
-                    <p>Описание вашего третьего проекта. Расскажите о технологиях и результатах.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Django</span>
-                    </div>
-                    <a href="#" class="project-link">Посмотреть <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Давайте свяжемся</h2>
-            <p class="contact-subtitle">Я открыт к новым возможностям и интересным проектам</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Телефон</h4>
-                            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Город</h4>
-                            <p>Ваш город, Ваша страна</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Ваш email" required>
-                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
-                </form>
-            </div>
-
-            <div class="social-links">
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Футер -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Мое портфолио. Все права защищены.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
