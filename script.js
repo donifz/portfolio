@@ -30,29 +30,6 @@ if (contactForm) {
     });
 }
 
-// Активная навигация при прокрутке
-window.addEventListener('scroll', () => {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
-    
-    let currentSection = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - 200) {
-            currentSection = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
-            link.classList.add('active');
-        }
-    });
-});
-
 // Эффект анимации при загрузке
 window.addEventListener('load', () => {
     const elements = document.querySelectorAll('.skill-card, .project-card, .info-item');

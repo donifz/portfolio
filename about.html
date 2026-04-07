@@ -3,7 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О себе | Дони</title>
+  <title>О себе | Frontend Developer в Бишкеке — Дони</title>
+  <meta name="description" content="О себе: Дони — frontend developer из Бишкека. Работаю с React, Next.js, TypeScript и создаю сайты и интерфейсы для бизнеса в Кыргызстане и СНГ.">
+  <meta name="author" content="Дони">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="geo.region" content="KG-GB">
+  <meta name="geo.placename" content="Bishkek">
+  <link rel="canonical" href="https://donifz.github.io/portfolio/about.html">
+  <meta property="og:title" content="О себе | Frontend Developer в Бишкеке — Дони">
+  <meta property="og:description" content="Frontend developer из Бишкека. Создаю сайты и интерфейсы на React, Next.js и TypeScript для бизнеса в Кыргызстане и СНГ.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://donifz.github.io/portfolio/about.html">
+  <meta property="og:site_name" content="Портфолио Дони">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://donifz.github.io/portfolio/assets/hero-photo.png">
+  <meta property="og:image:alt" content="Портрет Дони — frontend developer из Бишкека">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="О себе | Frontend Developer в Бишкеке — Дони">
+  <meta name="twitter:description" content="Frontend developer из Бишкека. Создаю сайты и интерфейсы на React, Next.js и TypeScript для бизнеса в Кыргызстане и СНГ.">
+  <meta name="twitter:image" content="https://donifz.github.io/portfolio/assets/hero-photo.png">
+  <meta name="twitter:image:alt" content="Портрет Дони — frontend developer из Бишкека">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,26 +31,26 @@
   <div class="page-shell">
     <div class="hero-card">
       <header class="hero-header">
-        <div class="brand">Doni</div>
-        <nav class="hero-nav">
+        <a href="index.html" class="brand" aria-label="Дони — главная">Doni</a>
+        <nav class="hero-nav" aria-label="Основная навигация">
           <a href="index.html" class="nav-link">Главная</a>
-          <a href="about.html" class="nav-link active">О себе</a>
+          <a href="about.html" class="nav-link active" aria-current="page">О себе</a>
           <a href="skills.html" class="nav-link">Навыки</a>
           <a href="works.html" class="nav-link">Работы</a>
           <a href="contact.html" class="nav-link">Контакты</a>
         </nav>
       </header>
 
-      <section class="about-page">
+      <main class="about-page">
         <div class="about-main">
-          <div class="about-copy">
+          <section class="about-copy" aria-labelledby="about-title">
             <p class="eyebrow">О себе</p>
-            <h1 class="about-title">Делаю чистые и быстрые интерфейсы для бизнеса.</h1>
-            <p class="about-lead">Frontend / full-stack разработчик из Бишкека. Собираю сайты и интерфейсы, где важны структура, скорость и хороший UX.</p>
+            <h1 class="about-title" id="about-title">Делаю чистые и быстрые интерфейсы для бизнеса.</h1>
+            <p class="about-lead">Frontend / full-stack developer из Бишкека. Собираю сайты и интерфейсы, где важны структура, скорость, SEO и хороший UX.</p>
 
-            <div class="about-pill-row">
+            <div class="about-pill-row" aria-label="Основные направления">
               <span class="about-pill about-pill-primary">Frontend / Full-stack</span>
-              <span class="about-pill">UI/UX thinking</span>
+              <span class="about-pill">React / Next.js</span>
               <span class="about-pill">Адаптивная разработка</span>
             </div>
 
@@ -49,14 +69,12 @@
               </div>
             </div>
 
-            <div class="about-note">
-              Люблю аккуратные интерфейсы без шума: сильная структура, понятные сценарии и код, который удобно развивать дальше.
-            </div>
-          </div>
+            <p class="about-note">Люблю аккуратные интерфейсы без шума: сильная структура, понятные сценарии и код, который удобно развивать дальше. Подробнее о стеке на <a href="skills.html">странице навыков</a>, а кейсы собраны в <a href="works.html">работах</a>.</p>
+          </section>
 
-          <aside class="about-side">
-            <div class="fact-card fact-card-about">
-              <h3>Коротко</h3>
+          <aside class="about-side" aria-label="Краткая информация">
+            <section class="fact-card fact-card-about">
+              <h2>Коротко</h2>
               <div class="fact-list">
                 <div class="fact-item">
                   <span>Локация</span>
@@ -64,7 +82,7 @@
                 </div>
                 <div class="fact-item">
                   <span>Фокус</span>
-                  <strong>Сайты и продуктовые интерфейсы</strong>
+                  <strong>Сайты, лендинги и продуктовые интерфейсы</strong>
                 </div>
                 <div class="fact-item">
                   <span>Стек</span>
@@ -72,26 +90,26 @@
                 </div>
                 <div class="fact-item">
                   <span>Подход</span>
-                  <strong>Чистый визуал и понятный UX</strong>
+                  <strong>Чистый визуал, SEO-база и понятный UX</strong>
                 </div>
               </div>
-            </div>
+            </section>
 
             <div class="about-mini-grid">
               <article class="about-mini-card">
-                <span class="about-mini-kicker">Подход</span>
+                <h2 class="about-mini-kicker">Подход</h2>
                 <strong>Сначала смысл, потом подача</strong>
                 <p>Логика, ритм, адаптив и аккуратные состояния.</p>
               </article>
               <article class="about-mini-card about-mini-card-tint">
-                <span class="about-mini-kicker">Фокус</span>
+                <h2 class="about-mini-kicker">Фокус</h2>
                 <strong>Лендинги, сервисы, редизайн</strong>
                 <p>Чистая подача, понятные экраны и зрелый интерфейс.</p>
               </article>
             </div>
           </aside>
         </div>
-      </section>
+      </main>
     </div>
   </div>
 

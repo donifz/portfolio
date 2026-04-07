@@ -382,6 +382,20 @@ a {
   font-size: 0.95rem;
 }
 
+.about-note a,
+.feature-card a,
+.project-compact-card a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-note a:hover,
+.feature-card a:hover,
+.project-compact-card a:hover {
+  text-decoration: underline;
+}
+
 .about-side {
   display: grid;
   gap: 1rem;
@@ -401,6 +415,7 @@ a {
   align-self: stretch;
 }
 
+.fact-card h2,
 .fact-card h3 {
   font-size: 0.78rem;
   margin: 0;
@@ -701,6 +716,7 @@ a {
   box-shadow: 0 18px 40px rgba(59, 130, 246, 0.12);
 }
 
+.contact-compact-card h2,
 .contact-compact-card h3 {
   font-size: 0.78rem;
   margin: 0;
@@ -737,6 +753,16 @@ a {
   font-weight: 700;
   color: var(--text);
   line-height: 1.35;
+}
+
+.contact-compact-item a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-compact-item a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .badge-grid {
@@ -907,6 +933,64 @@ a {
   resize: vertical;
 }
 
+
+@media (max-width: 1280px) {
+  .hero-header {
+    padding: 26px 30px;
+  }
+
+  .hero-nav {
+    gap: 1.5rem;
+  }
+
+  .hero-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.84fr);
+    gap: 1.8rem;
+    padding: 2.55rem 2.8rem 2.85rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.9rem, 5vw, 4.3rem);
+  }
+
+  .hero-description {
+    max-width: 500px;
+  }
+
+  .hero-visual {
+    width: min(100%, 430px);
+    height: 430px;
+  }
+
+  .hero-blob {
+    width: 355px;
+    height: 305px;
+  }
+
+  .hero-image {
+    width: 360px;
+    height: 430px;
+  }
+
+  .about-page,
+  .feature-page {
+    padding: 2.4rem 2.7rem 2.75rem;
+  }
+
+  .about-main,
+  .feature-main {
+    gap: 1.15rem;
+  }
+
+  .about-title,
+  .feature-title {
+    font-size: clamp(2.15rem, 4vw, 3.5rem);
+  }
+
+  .hero-card {
+    min-height: auto;
+  }
+}
 
 @media (max-width: 1100px) {
   .hero-header {

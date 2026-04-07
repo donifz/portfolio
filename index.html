@@ -3,22 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дони | Веб-разработчик из Кыргызстана</title>
-  <meta name="description" content="Дони — веб-разработчик из Кыргызстана. Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
-  <meta name="keywords" content="веб-разработчик, дизайн сайта, UI/UX, адаптивный сайт, Кыргызстан, Бишкек, цифровой продукт, маркетинг">
+  <title>Дони | Frontend Developer в Бишкеке, Кыргызстан</title>
+  <meta name="description" content="Дони — frontend developer из Бишкека, Кыргызстан. Разрабатываю сайты, лендинги и интерфейсы на React, Next.js и TypeScript для бизнеса в Бишкеке и СНГ.">
   <meta name="author" content="Дони">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#3b82f6">
-  <meta property="og:title" content="Дони | Веб-разработчик из Кыргызстана">
-  <meta property="og:description" content="Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
+  <meta name="geo.region" content="KG-GB">
+  <meta name="geo.placename" content="Bishkek">
+  <link rel="canonical" href="https://donifz.github.io/portfolio/">
+  <meta property="og:title" content="Дони | Frontend Developer в Бишкеке, Кыргызстан">
+  <meta property="og:description" content="Разрабатываю сайты, лендинги и интерфейсы на React, Next.js и TypeScript для бизнеса в Бишкеке и СНГ.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://donifz.github.io/portfolio/">
+  <meta property="og:site_name" content="Портфолио Дони">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:image" content="assets/hero-photo.png">
-  <meta property="og:image:alt" content="Портрет Дони — веб-разработчика">
+  <meta property="og:image" content="https://donifz.github.io/portfolio/assets/hero-photo.png">
+  <meta property="og:image:alt" content="Портрет Дони — frontend developer из Бишкека">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Дони | Веб-разработчик из Кыргызстана">
-  <meta name="twitter:description" content="Создаю адаптивные сайты и цифровые продукты с понятным интерфейсом и сильным UX для бизнеса из Бишкека и СНГ.">
-  <meta name="twitter:image" content="assets/hero-photo.png">
+  <meta name="twitter:title" content="Дони | Frontend Developer в Бишкеке, Кыргызстан">
+  <meta name="twitter:description" content="Разрабатываю сайты, лендинги и интерфейсы на React, Next.js и TypeScript для бизнеса в Бишкеке и СНГ.">
+  <meta name="twitter:image" content="https://donifz.github.io/portfolio/assets/hero-photo.png">
+  <meta name="twitter:image:alt" content="Портрет Дони — frontend developer из Бишкека">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script type="application/ld+json">
@@ -26,19 +31,30 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Дони",
-    "jobTitle": "Веб-разработчик",
-    "description": "Веб-разработчик из Кыргызстана. Разрабатываю адаптивные сайты и интерфейсы с грамотным UX для бизнеса в Бишкеке и СНГ.",
-    "image": "assets/hero-photo.png",
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend developer из Бишкека, Кыргызстан. Разрабатываю сайты, лендинги и интерфейсы на React, Next.js и TypeScript.",
+    "url": "https://donifz.github.io/portfolio/",
+    "image": "https://donifz.github.io/portfolio/assets/hero-photo.png",
+    "email": "mailto:doniattokurovich@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Бишкек",
       "addressCountry": "KG"
     },
-    "knowsAbout": ["веб-разработка", "UI/UX", "адаптивный сайт", "цифровые продукты"],
+    "knowsAbout": [
+      "frontend development",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "UI/UX",
+      "адаптивная верстка",
+      "лендинги",
+      "веб-интерфейсы"
+    ],
     "sameAs": [
-      "https://www.linkedin.com/",
-      "https://www.behance.net/",
-      "https://github.com/"
+      "https://github.com/donifz",
+      "https://www.linkedin.com/in/doni-attokurovich-194398198/",
+      "https://www.instagram.com/doniiifz/"
     ]
   }
   </script>
@@ -47,9 +63,9 @@
   <div class="page-shell">
     <div class="hero-card">
       <header class="hero-header">
-        <div class="brand">Doni</div>
-        <nav class="hero-nav">
-          <a href="index.html" class="nav-link active">Главная</a>
+        <a href="index.html" class="brand" aria-label="Дони — главная">Doni</a>
+        <nav class="hero-nav" aria-label="Основная навигация">
+          <a href="index.html" class="nav-link active" aria-current="page">Главная</a>
           <a href="about.html" class="nav-link">О себе</a>
           <a href="skills.html" class="nav-link">Навыки</a>
           <a href="works.html" class="nav-link">Работы</a>
@@ -57,28 +73,28 @@
         </nav>
       </header>
 
-      <section class="hero-panel" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow">Привет,</p>
-          <h1>Я <span>Дони</span><br>веб-разработчик</h1>
-          <p class="hero-description">Создаю современные сайты и цифровые продукты с понятным интерфейсом и сильным пользовательским опытом.</p>
-          <a href="contact.html" class="btn btn-primary hero-action">Связаться</a>
-          <div class="hero-social-links">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <main class="hero-panel" id="home">
+        <section class="hero-copy" aria-labelledby="home-title">
+          <p class="eyebrow">Бишкек, Кыргызстан</p>
+          <h1 id="home-title">Я <span>Дони</span><br>frontend developer</h1>
+          <p class="hero-description">Создаю современные сайты, лендинги и продуктовые интерфейсы с понятной структурой, сильным UX и аккуратной frontend-разработкой.</p>
+          <a href="mailto:doniattokurovich@gmail.com" class="btn btn-primary hero-action">Обсудить проект</a>
+          <div class="hero-social-links" aria-label="Полезные ссылки">
+            <a href="https://github.com/donifz" aria-label="GitHub Дони" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/doni-attokurovich-194398198/" aria-label="LinkedIn Дони" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/doniiifz/" aria-label="Instagram Дони" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/996553002992" aria-label="WhatsApp Дони" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
           </div>
-        </div>
+        </section>
 
-        <div class="hero-visual">
+        <section class="hero-visual" aria-label="Портрет Дони">
           <div class="hero-blob">
             <div class="hero-image">
-                <img src="assets/hero-photo.png" alt="Портрет Дони — веб-разработчика">
+              <img src="assets/hero-photo.png" alt="Дони — frontend developer из Бишкека, Кыргызстан">
             </div>
           </div>
-          
-        </div>
-      </section>
+        </section>
+      </main>
     </div>
   </div>
   <script src="script.js"></script>
