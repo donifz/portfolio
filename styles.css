@@ -49,6 +49,21 @@ a {
   overflow: hidden;
 }
 
+.page-shell.slide-in-right {
+  animation: slideInFromRight 0.45s ease forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .hero-header {
   display: flex;
   align-items: center;
